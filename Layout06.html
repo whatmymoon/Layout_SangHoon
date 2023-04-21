@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout06.html</title>
+    <style type="text/css">
+        #first{position:relative; width:100%; background:rgb(253, 253, 181); height:200px; margin:0 auto;}
+        #first_title{position:relative; width:450px; height:70px; font-size:200%; line-height:70px; font-weight:bold; text-align: center; margin:0 auto; background:rgb(216, 216, 176);}
+        #first_text{position:relative; width:450px; height:130px; margin:0 auto; background:rgb(197, 197, 187);}
+        
+        #second{position:relative; width:1100px; height : 600px; margin:0 auto; background:rgb(187, 224, 132);}
+        .rect{position:relative; float:left; width:350px; height:600px; margin-right:25px; background : rgb(141, 242, 255);}
+        /* .rect:last-child{margin-right:0px;} 다 rect를 클래스로 선언하고 마지막 자식에게는 margin-right:0px; 를 넣어주면 된다! */
+        #rect{position:relative; float:left; width:350px; height:600px; background :rgb(141, 242, 255);}
+        .panel{position:relative; width:300px; height:300px; left:30px; top:-30px; background:white; box-shadow: 5px 5px 5px;}
+        .title{position:relative; float:top; width:280px; height:98px; font-size:200%; line-height:98px; font-weight:bold; text-align:center; margin:0 auto; border: 1px dashed blue;}
+        .text{position:relative; float:top; width:280px; height:198px; font-size:90%; border:1px dashed blue; margin:0 auto;}
+        .button{position:absolute; width:120px; height:30px; font-size:150%; right:-20px; background: blue; color : white; font-weight:bold; text-align:center; bottom:-15px;}
+    </style>
+</head>
+<body>
+    <div id = "first">
+        <div id = "first_title">Content07 Title</div>
+        <div id = "first_text">비상계엄하의 군사재판은 군인·군무원의 범죄나 군사에 관한 간첩죄의 경우와 ·초소·유독 음식물공급·포로에 관한 죄중 법률이 정한 경우에 한하여 단심으로 할 수 있다</div>
+    </div>
+    <div id = "second">
+            <div class = "rect">
+                <div class = "pictrue"><img src="images/Penguins.jpg" width="350"></div>
+                <div class = "panel">
+                    <div class = "title">Segment Title</div>
+                    <div class = "text">공무원의 신분과 정치적 중립성은 법률이 정하는 바에 의하여 보장된다. 대한민국의 영토는 한반도와 그 부속도서로 한다. 나는 헌법을 준수하고 국가를 보위하며 조국의 평화적 통일과 국민의 자유와 복리의 증진 및 민족문화의 창달에 노력하여 대통령으로서의 직책을 성실히 수행할 것을 국민 앞에 엄숙히 선서합니다.</div>
+                    <div class = "button">BUTTON</div>
+                </div>
+            </div>
+            <div class = "rect">
+                <div class = "pictrue"><img src="images/Lighthouse.jpg" width="350"></div>
+                <div class = "panel">
+                    <div class = "title">Segment Title</div>
+                    <div class = "text">공무원의 신분과 정치적 중립성은 법률이 정하는 바에 의하여 보장된다. 대한민국의 영토는 한반도와 그 부속도서로 한다. 나는 헌법을 준수하고 국가를 보위하며 조국의 평화적 통일과 국민의 자유와 복리의 증진 및 민족문화의 창달에 노력하여 대통령으로서의 직책을 성실히 수행할 것을 국민 앞에 엄숙히 선서합니다.</div>
+                    <div class = "button">BUTTON</div>
+                </div>
+            </div>
+            <div id = "rect">
+                <div class = "pictrue"><img src="images/Jellyfish.jpg" width="350"></div>
+                <div class = "panel">
+                    <div class = "title">Segment Title</div>
+                    <div class = "text">공무원의 신분과 정치적 중립성은 법률이 정하는 바에 의하여 보장된다. 대한민국의 영토는 한반도와 그 부속도서로 한다. 나는 헌법을 준수하고 국가를 보위하며 조국의 평화적 통일과 국민의 자유와 복리의 증진 및 민족문화의 창달에 노력하여 대통령으로서의 직책을 성실히 수행할 것을 국민 앞에 엄숙히 선서합니다.</div>
+                    <div class = "button">BUTTON</div>
+                </div>
+            </div>
+        
+    </div>
+</body>
+</html>

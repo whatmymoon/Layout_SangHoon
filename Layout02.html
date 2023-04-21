@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Layout02.html</title>
+<style type="text/css">
+	body{ margin:0px;}
+	#base{ position:relative; width:100%; height:500px; border:2px solid black; top:100px;}
+	#box1{ position:absolute; width:50%; height:400px; border:1px solid black; top:50px; right:0; /* left:50%; */
+		
+		/* background:#FFFFAA; 이제는 사이트에서 색을 찾아오는 것도 할 필요가 있다. */
+		
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fefcea+100,f1da36+100 */
+		background: rgb(254,252,234); /* Old browsers */
+		background: -moz-linear-gradient(left,  rgba(254,252,234,1) 100%, rgba(241,218,54,1) 100%); 
+		/* FF3.6-15 */
+		background: -webkit-linear-gradient(left,  rgba(254,252,234,1) 100%,rgba(241,218,54,1) 100%); 
+		/* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right,  rgba(254,252,234,1) 100%,rgba(241,218,54,1) 100%); 
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=1 ); 
+		/* IE6-9 */
+		
+		box-shadow: -5px 5px 5px 5px #a2a2a2;
+		}
+		
+	#box2{ /* position:absolute; width:10%; height:400px; border:1px solid gray; */ /* top:50px; */ right:52%; background:orange;
+	/* box-shadow: -5px 5px #a2a2a2; */}
+	
+	#box3{ /* position:absolute; width:10%; height:400px; border:1px solid gray; */ /* top:50px; */ left:20%; background:yellow;
+	/* box-shadow: -5px 5px #a2a2a2; */}
+	
+	.box{ position:absolute; height:400px; width:10%; top:50px; border: 1px solid gray;
+	box-shadow: -5px 5px 5px 5px gray;}
+	/* id의 내용들이 겹치는 부분을 class에 담아 한번에 정리하면 코드를 줄일 수 있다. */
+</style>
+</head>
+<body>
+<div id="base">
+	<div id="box1" ></div>
+	<div id="box2" class="box"></div>
+	<div id="box3" class="box"></div>
+</div>
+</body>
+</html>

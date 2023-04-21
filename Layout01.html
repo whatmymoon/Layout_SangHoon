@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Layout01.html</title>
+<style type="text/css">
+	body{ margin:0px; } /* body의 margin을 0으로 하면 페이지에 표시되는 내용이 페이지 경계선안쪽
+	여백없이 꽉차게 들어갑니다. */
+	#base{ position:relative; width:100%; height:500px; border:3px dotted black; top:100px;}
+	/* absolute 인 내용물을 안고 있을 div 는 position:relative 로 해야 그들(absolute 내용물)의 기준점이 됩니다. */
+	#box1{ position:absolute; width:50%; height:500px; background:yellow; top:0; /* left:0; */ right:50%; border:2px solid green; }
+	#box2{ position:absolute; width:50%; height:400px; background:orange; border:2px solid red;
+	left:45%; top:50px;}
+	#box3{ position:absolute; width:100px; height:100px; background:blue; top:0; left:0; border:2px solid red;}
+	#box4{ position:absolute; width:100px; height:100px; background:blue; top:0; right:0; border:2px solid red;}
+	#box5{ position:absolute; width:100px; height:100px; background:blue; bottom:0; left:0; border:2px solid red;}
+	#box6{ position:absolute; width:100px; height:100px; background:blue; bottom:0; right:0; border:2px solid red;}
+</style>
+</head>
+<body>
+<div id="base">
+	<div id="box1"></div>
+	<div id="box2"></div>
+	
+	<div id="box3"></div>
+	<div id="box4"></div>
+	<div id="box5"></div>
+	<div id="box6"></div>
+	<!-- 각 div 의 크기 가로100, 세로100 배경색 blue 로 하여 base의 각 모서리(왼쪽 상단, 오른쪽 상단, 오른쪽 하단, 왼쪽하단에
+	배치하세요. -->
+</div>
+</body>
+</html>
